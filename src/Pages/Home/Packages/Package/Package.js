@@ -1,8 +1,8 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 
-const Package = ({S_package}) => {
-    const { img, name, member, price } = S_package;
+const Package = ({service}) => {
+    const { img, name, member, price } = service;
     return (
         <div className="col-lg-4 col-md-6 col-sm-12 c-cart my-3 ">
             <Card>
