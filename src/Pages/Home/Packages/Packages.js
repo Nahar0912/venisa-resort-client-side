@@ -3,10 +3,9 @@ import Package from './Package/Package';
 
 const Packages = () => {
     const [services, setServices] = useState([])
-    const service = services.splice(0,6);
-    console.log(service);
+    // const service = services.splice(0,6);
     useEffect(() => {
-        fetch('service.json')
+        fetch('https://aqueous-basin-68815.herokuapp.com/packages')
             .then(res => res.json())
             .then(data => setServices(data));
     })

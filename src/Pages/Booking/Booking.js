@@ -10,7 +10,7 @@ const Booking = () => {
 
     
     useEffect(() => {
-        fetch('/service.json')
+        fetch('https://aqueous-basin-68815.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setBookings(data))
     }, []);

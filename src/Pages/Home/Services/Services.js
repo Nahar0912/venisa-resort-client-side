@@ -8,7 +8,7 @@ const Services = () => {
     const service = services.splice(6,9);
     console.log(service);
     useEffect(() => {
-        fetch('service.json')
+        fetch('https://aqueous-basin-68815.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setServices(data));
     })

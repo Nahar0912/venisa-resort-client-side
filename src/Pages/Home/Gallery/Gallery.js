@@ -7,7 +7,7 @@ const Gallery = () => {
     const [services, setGallery] = useState([])
     
     useEffect(() => {
-        fetch('service.json')
+        fetch('https://aqueous-basin-68815.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setGallery(data));
         
