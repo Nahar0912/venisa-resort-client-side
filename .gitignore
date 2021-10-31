@@ -2,7 +2,7 @@
 
 # dependencies
 /node_modules
-/Firebase
+/src/Pages/Login/Firebase
 /.pnp
 .pnp.js
 
