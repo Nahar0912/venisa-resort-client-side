@@ -26,7 +26,7 @@ const UpdateUser = () => {
         setUser(updatedUser);
     }
     const handleUpdateUser = e => {
-        const url = `http://localhost:5000/users/${id}`;
+        const url = `https://aqueous-basin-68815.herokuapp.com/users/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {
