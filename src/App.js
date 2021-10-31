@@ -10,6 +10,9 @@ import Gallery from './Pages/Home/Gallery/Gallery';
 import About from './Pages/About/About';
 import Booking from './Pages/Booking/Booking';
 import Login from './Pages/Login/Login/Login';
+import Users from './Pages/Users/Users';
+import AddUser from './Pages/AddUser/AddUser';
+import UpdateUser from './Pages/UpdateUser/UpdateUser';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 
 function App() {
@@ -36,6 +39,15 @@ function App() {
             </Route>
             <Route path="/login">
               <Login></Login>
+            </Route>
+            <Route exact path="/users">
+              <Users></Users>
+            </Route>
+            <Route path="/users/add">
+              <AddUser></AddUser>
+            </Route>
+            <Route path="/users/update/:id">
+              <UpdateUser></UpdateUser>
             </Route>
             <PrivateRoute path="/booking/:serviceId">
               <Booking></Booking>

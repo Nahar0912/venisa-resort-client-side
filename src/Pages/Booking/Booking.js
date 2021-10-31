@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 
 
 const Booking = () => {
@@ -32,6 +33,7 @@ const Booking = () => {
             <div>
                 <p>{ singleBooking?.info}</p>
             </div>
+            <Link to={`/users/add`}><button type="button" className="btn btn-info">Add Info</button></Link>
         </div>
     );
 };
